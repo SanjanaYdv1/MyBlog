@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
+    <div className="fixed w-full h-screen overflow-auto"> 
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About />} /> 
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
